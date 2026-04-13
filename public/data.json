@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "sarah.chen@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met freshman year. She's now a UX designer in Berlin. We bond over indie films and terrible puns.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Williams",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "m.williams@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "Former manager who took a chance on me. Now runs his own startup. Always full of sharp advice.",
+    "goal": 30,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 3,
+    "name": "Priya Nair",
+    "picture": "https://randomuser.me/api/portraits/women/57.jpg",
+    "email": "priya.nair@hey.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["college", "travel buddy"],
+    "bio": "We backpacked through Southeast Asia together in 2019. Lives in Toronto now. Monthly catch-ups keep us close.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 4,
+    "name": "Tobias Rüger",
+    "picture": "https://randomuser.me/api/portraits/men/18.jpg",
+    "email": "tobias.rueger@protonmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["childhood", "family friend"],
+    "bio": "Grew up two houses apart. He's the kind of friend who picks up right where you left off, no matter the gap.",
+    "goal": 30,
+    "next_due_date": "2026-03-14"
+  },
+  {
+    "id": 5,
+    "name": "Aisha Diallo",
+    "picture": "https://i.ibb.co.com/tpZDkxBN/Aisha.jpg",
+    "email": "aisha.diallo@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["book club", "close friend"],
+    "bio": "Met at a local reading group. Passionate about African literature and sourdough baking. Keeps me culturally sharp.",
+    "goal": 7,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 6,
+    "name": "Daniel Park",
+    "picture": "https://randomuser.me/api/portraits/men/74.jpg",
+    "email": "dpark@dpark.dev",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["tech", "college"],
+    "bio": "College roommate turned software engineer at Google. We co-wrote a startup pitch that never launched, but the friendship stuck.",
+    "goal": 21,
+    "next_due_date": "2026-03-20"
+  },
+  {
+    "id": 7,
+    "name": "Lena Hoffman",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "lena.hoff@me.com",
+    "days_since_contact": 8,
+    "status": "almost due",
+    "tags": ["yoga class", "neighbor"],
+    "bio": "Met at a morning yoga class three years ago. Now a solid weekly coffee routine. Always brings homemade pastries.",
+    "goal": 10,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 8,
+    "name": "Kwame Asante",
+    "picture": "https://i.ibb.co.com/Hfnd4grK/85.jpg",
+    "email": "kwame.asante@yahoo.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["old colleague", "photography"],
+    "bio": "We worked together at a media agency. Still collaborate on photography projects. Needs a proper catch-up — way overdue.",
+    "goal": 30,
+    "next_due_date": "2026-02-13"
+  },
+  {
+    "id": 9,
+    "name": "Natasha Ivanova",
+    "picture": "https://randomuser.me/api/portraits/women/36.jpg",
+    "email": "n.ivanova@fastmail.com",
+    "days_since_contact": 13,
+    "status": "on-track",
+    "tags": ["grad school", "accountability partner"],
+    "bio": "Met during our MBA. We do biweekly check-ins on life goals. Brutally honest, exactly what I need.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 10,
+    "name": "Ravi Subramaniam",
+    "picture": "https://i.ibb.co.com/m5NKhDgK/Ravi.jpg",
+    "email": "ravi.sub@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["gym buddy", "work"],
+    "bio": "Workout partner who became a genuine friend. Knows everyone at the gym and motivates without being annoying about it.",
+    "goal": 10,
+    "next_due_date": "2026-04-14"
+  }
+]
