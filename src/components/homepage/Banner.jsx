@@ -6,8 +6,8 @@ const Banner = () => {
             <div className="hero min-h-[60vh]">
                 <div className="hero-content text-center">
                     <div className="">
-                        <h1 className="text-5xl font-bold ">Friends to keep close in your life</h1>
-                        <p className="py-6 max-w-[70vw] mx-auto">
+                        <h1 className="text-2xl md:text-5xl font-bold ">Friends to keep close in your life</h1>
+                        <p className="py-6 text-sm md:text-base md:max-w-[70vw] mx-auto">
                             Your personal shelf of meaningful connections. Browse, tend, and nurture the
                             relationships that matter most.
                         </p>
