@@ -18,7 +18,7 @@ const Friends = async () => {
 
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto py-10'>
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10 border-b pb-10 border-gray-200'>
                 <DataCard number={totalFriends}>Total Friends</DataCard>
                 <DataCard number={onTrack}>On Track</DataCard>
