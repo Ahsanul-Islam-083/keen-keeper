@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const statusStyles = {
     "overdue": "badge badge-error text-white",
@@ -11,7 +12,7 @@ const FriendCard = ({ friend }) => {
     const { name, picture, days_since_contact, status, tags } = friend;
 
     return (
-        <div className="card bg-base-100 border border-base-200 shadow-sm hover:shadow-md transition-shadow duration-200 items-center text-center p-6 gap-3">
+        <Link href={`/friend/${friend.id}`} className="card bg-base-100 border border-base-200 shadow-sm transition hover:scale-105 group hover:no-underline focus:no-underline items-center text-center p-6 gap-3">
 
             {/* Image */}
             <div className="avatar">
@@ -28,7 +29,7 @@ const FriendCard = ({ friend }) => {
 
             {/* Name */}
             <div className="card-body p-0 items-center gap-2">
-                <h3 className="card-title text-base font-semibold text-gray-900">
+                <h3 className="card-title text-base font-semibold text-gray-900 group-hover:underline group-focus:underline">
                     {name}
                 </h3>
 
@@ -52,7 +53,7 @@ const FriendCard = ({ friend }) => {
                     {status}
                 </span>
             </div>
-        </div>
+        </Link>
     );
 };
 
