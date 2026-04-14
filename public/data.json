@@ -90,7 +90,7 @@
     "email": "kwame.asante@yahoo.com",
     "days_since_contact": 60,
     "status": "overdue",
-    "tags": ["old colleague", "photography"],
+    "tags": ["colleague", "photography"],
     "bio": "We worked together at a media agency. Still collaborate on photography projects. Needs a proper catch-up — way overdue.",
     "goal": 30,
     "next_due_date": "2026-02-13"
@@ -102,7 +102,7 @@
     "email": "n.ivanova@fastmail.com",
     "days_since_contact": 13,
     "status": "on-track",
-    "tags": ["grad school", "accountability partner"],
+    "tags": ["school", "accountability partner"],
     "bio": "Met during our MBA. We do biweekly check-ins on life goals. Brutally honest, exactly what I need.",
     "goal": 14,
     "next_due_date": "2026-04-20"

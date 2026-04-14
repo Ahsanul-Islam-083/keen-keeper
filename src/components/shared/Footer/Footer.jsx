@@ -33,8 +33,8 @@ const Footer = () => {
             </footer>
             <div className='divider container mx-auto text-[#1A8862]] before:bg-[#1A8862]/40 after:bg-[#1A8862]/40'></div>
             <div className='container mx-auto flex flex-col md:flex-row items-center justify-between text-white/40 text-sm pb-4'>
-                <p>© {new Date().getFullYear()} KeenKeeper - All right reserved</p>
-                <ul className='flex items-center gap-3'>
+                <p className='text-center md:text-start'>© {new Date().getFullYear()} KeenKeeper - All right reserved</p>
+                <ul className='flex items-center text-xs md:text-sm  gap-3'>
                     <li>Privacy Policy</li>
                     <li>Terms of Service</li>
                     <li>Cookies</li>

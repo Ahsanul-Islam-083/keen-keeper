@@ -1,5 +1,6 @@
 import React from 'react';
 import DataCard from '../ui/DataCard';
+import FriendCard from '../ui/FriendCard';
 
 const Friends = async () => {
 
@@ -9,7 +10,7 @@ const Friends = async () => {
     const friends = await res.json();
     // console.log(friends);
 
-    
+
     const totalFriends = friends.length;
     const onTrack = friends.filter(friend => friend.status === "on-track").length;
     const needsAttention = friends.filter(friend => friend.status === "overdue" || friend.status === "almost due").length;
@@ -27,6 +28,13 @@ const Friends = async () => {
             </div>
             <div>
                 <h2 className='text-2xl font-semibold mb-4'>Your Friends </h2>
+                <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6'>
+                    {
+                        friends.map((friend) => (
+                            <FriendCard key={friend.id} friend={friend} />
+                        ))
+                    }
+                </div>
             </div>
         </div>
     );
