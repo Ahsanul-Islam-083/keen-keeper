@@ -13,7 +13,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div className="bg-white sticky top-0 shadow-sm">
+    <div className="bg-white z-10 sticky top-0 shadow-sm">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">

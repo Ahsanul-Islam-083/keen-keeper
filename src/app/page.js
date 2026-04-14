@@ -1,10 +1,12 @@
+import Banner from "@/components/homepage/Banner";
+import Friends from "@/components/homepage/Friends";
 
 
 export default function Home() {
   return (
   <div>
-    <h1 className="text-4xl font-bold text-center mt-10">Welcome to Keen Keeper</h1>
-    <button className="btn btn-primary">sss</button>
+    <Banner/>
+    <Friends/>
   </div>
   );
 }

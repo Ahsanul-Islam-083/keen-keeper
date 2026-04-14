@@ -6,15 +6,15 @@ import X from "../../../assets/twitter.png";
 
 const Footer = () => {
     return (
-        <div className='bg-[#2d5a4e]'>
-            <footer className="container mx-auto footer footer-horizontal footer-center  text-primary-content px-10 gap-6">
-                <aside className='md:'>
+        <div className='bg-[#2d5a4e] p-10'>
+            <footer className="container mx-auto footer footer-horizontal footer-center  text-primary-content gap-6">
+                <aside>
 
                     <h2 className="font-bold text-3xl md:text-4xl">
                         Keen<span className='font-medium'>Keeper</span>
                     </h2>
                     <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
-                    
+
                 </aside>
                 <nav>
                     <p className='text-lg md:text-xl font-medium'>Social Links</p>
