@@ -1,52 +1,7 @@
-// import { notFound } from 'next/navigation';
-// import React from 'react';
-
-// const friendsPromise = async()=>{
-// const res = await fetch("https://keen-keeper-zeta.vercel.app/data.json");
-// const friends =  await res.json();
-// return friends;
-// }
-
-// export async function generateMetadata({params}){
-//     const {id} = await params;
-//     const friends = await friendsPromise();
-//     const friend = friends.find(f=> f.id === Number(id));
-//     if(!friend){
-//         return{
-//             title: "Friend Not Found | Keen Keeper",
-//         }
-//     }
-//     return{
-//         title: `${friend.name} | Keen Keeper`,
-//     }
-// }
-
-
-// const FriendDetailsPage = async({params}) => {
-//     const {id} = await params;
-//     const friends = await friendsPromise();
-//     const friend = friends.find(f=> f.id === Number(id));
-//     if (!friend) {
-//         notFound();
-//     }
-//     return (
-//         <div>
-
-//         </div>
-//     );
-// };
-
-// export default FriendDetailsPage;
-
-
-
-// -------------------------
-
 
 import { notFound } from "next/navigation";
 import { cache } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { LuBellOff, LuArchive, LuTrash2, LuPhone, LuMessageSquare, LuVideo } from "react-icons/lu";
 import DataCard from "@/components/ui/DataCard";
 
