@@ -3,6 +3,7 @@ import { CheckInContext } from '@/context/checkIn.context';
 import React, { useContext } from 'react';
 import { Legend, Pie, PieChart, Tooltip } from 'recharts';
 
+
 const StatsPage = () => {
 
     const { timeLine } = useContext(CheckInContext);
@@ -10,8 +11,7 @@ const StatsPage = () => {
     const text = timeLine.filter(item => item.type === "text");
     const call = timeLine.filter(item => item.type === "call");
     const video = timeLine.filter(item => item.type === "video");
-    // console.log('text',text);
-    // console.log(timeLine.map(i=> i.type));
+
 
     const data = [
         { name: 'Text', value: text.length, fill: '#7C3AED' },

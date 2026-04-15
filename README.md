@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [KeenKeeper – Your Personal Friendship Manager](https://keen-keeper-zeta.vercel.app/)
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-2d5a4e?style=for-the-badge&logo=vercel)](https://keen-keeper-zeta.vercel.app/)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📸 Screenshots
+
+### Home
+![Home Page](./screenshots/home.png)
+
+### Friend Detail
+![Friend Detail](./screenshots/friend-detail.png)
+
+### Timeline
+![Timeline](./screenshots/timeline.png)
+
+### Stats
+![Stats](./screenshots/stats.png)
+
+---
+
+## 📌 About The Project
+KeenKeeper is a relationship management app that helps you stay connected with the people who matter most. It tracks when you last contacted each friend, reminds you when you're overdue, and logs every interaction — calls, texts, and video chats — so no important relationship slips through the cracks.
+
+---
+
+## 🛠️ Technologies Used
+- Next.js 15 (App Router)
+- React 19
+- Tailwind CSS
+- DaisyUI
+- JavaScript (ES6+)
+- Recharts
+- React Icons
+- Context API
+
+---
+
+## ✨ Key Features
+
+- 👥 **Friend Dashboard**  
+  Browse all your friends with their contact status, tags, and days since last contact at a glance.
+
+- 📊 **Stats & Analytics**  
+  Visual pie chart breakdown of your interactions by type — calls, texts, and video — powered by Recharts.
+
+- 🕐 **Interaction Timeline**  
+  A full log of every check-in with filtering by interaction type, search by name, and sorting by date.
+
+- 🔍 **Friend Detail Page**  
+  Each friend has a dedicated page showing their contact goal, next due date, bio, and quick check-in actions.
+
+- ⚡ **Quick Check-In**  
+  Instantly log a call, text, or video interaction directly from a friend's detail page.
+
+- ⏳ **Loading Skeletons**  
+  Smooth skeleton screens while data loads — the banner stays visible and only the content area shows a skeleton.
+
+- ❌ **Custom 404 Pages**  
+  A general page-not-found and a friend-specific not-found page, each with animated indicators.
+
+- 📱 **Fully Responsive**  
+  Mobile-first layout with a collapsing drawer navbar on small screens and a full nav on desktop.
+
+---
+
+## ⚙️ How It Works
+- Friend data is fetched from a hosted `data.json` file using Next.js server components
+- `React.cache()` is used to deduplicate fetch calls between `generateMetadata` and the page component
+- Interaction history is managed globally using React Context API and persists across pages during a session
+- `Suspense` boundaries isolate loading states so the banner always renders immediately
+- The timeline filters and search are handled with `useEffect` and local state on the client
+
+---
+
+## 📁 Project Structure
+```
+src/
+├── app/
+│   ├── page.js               # Home — friend grid + stats
+│   ├── not-found.jsx         # Global 404
+│   ├── friend/
+│   │   └── [id]/
+│   │       ├── page.jsx      # Friend detail
+│   │       ├── loading.jsx   # Detail skeleton
+│   │       └── not-found.jsx # Friend-specific 404
+│   ├── stats/
+│   │   └── page.jsx          # Pie chart analytics
+│   └── timeline/
+│       └── page.jsx          # Interaction timeline
+├── components/
+│   ├── homepage/             # Banner, Friends feed
+│   ├── shared/               # Navbar, Footer
+│   └── ui/                   # FriendCard, DataCard, TimelineItem, Skeletons
+├── context/
+│   └── checkIn.context.jsx   # Global interaction history
+└── assets/                   # call.png, text.png, video.png, logo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Clone the repo
+git clone https://github.com/your-username/keen-keeper.git
 
-## Learn More
+# Install dependencies
+cd keen-keeper
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Run the dev server
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔗 [https://keen-keeper-zeta.vercel.app/](https://keen-keeper-zeta.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> To add screenshots: create a `screenshots/` folder in the root of your project and drop in `home.png`, `friend-detail.png`, `timeline.png`, and `stats.png` — they'll automatically show up in the README on GitHub.

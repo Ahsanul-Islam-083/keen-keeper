@@ -4,6 +4,7 @@ import { CheckInContext } from '@/context/checkIn.context';
 import React, { useContext, useEffect, useState } from 'react';
 import { LuInbox } from 'react-icons/lu';
 
+
 const TimelinePage = () => {
 
     const filterLabels = {
