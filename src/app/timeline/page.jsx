@@ -47,10 +47,10 @@ const TimelinePage = () => {
                 <div className="dropdown dropdown-bottom">
                     <div tabIndex={0} role="button" className="select md:w-56 justify-between btn-outline">{filterLabels[filterType] || "Filter timeline"}</div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-56 p-2 shadow-sm">
-                        <li onClick={() => setFilterType("all")}><a>✓ All</a></li>
-                        <li onClick={() => setFilterType("call")}><a>✓ Voice Call</a></li>
-                        <li onClick={() => setFilterType("video")}><a>✓ Video Call</a></li>
-                        <li onClick={() => setFilterType("text")}><a>✓ Text Message</a></li>
+                        <li onClick={() => setFilterType("all")}><a><span className="w-4 inline-block">{filterType === "all" ? "✓" : ""}</span>All</a></li>
+                        <li onClick={() => setFilterType("call")}><a><span className="w-4 inline-block">{filterType === "call" ? "✓" : ""}</span>Voice Call</a></li>
+                        <li onClick={() => setFilterType("video")}><a><span className="w-4 inline-block">{filterType === "video" ? "✓" : ""}</span>Video Call</a></li>
+                        <li onClick={() => setFilterType("text")}><a><span className="w-4 inline-block">{filterType === "text" ? "✓" : ""}</span>Text Message</a></li>
                     </ul>
                 </div>
 
@@ -58,7 +58,6 @@ const TimelinePage = () => {
                 <select value={sortByTime}
                     onChange={e => setSortByTime(e.target.value)}
                     className="select  w-full sm:w-48">
-                    {/* <option disabled={true}>Sort By Time</option> */}
                     <option value="newest">Newest first</option>
                     <option value="oldest">Oldest first</option>
                 </select>
@@ -100,7 +99,7 @@ const TimelinePage = () => {
                     ) : (
                         <div>
                             {
-                                filtered.map((item,i)=><TimelineCard key={i} item={item} />)
+                                filtered.map((item, i) => <TimelineCard key={i} item={item} />)
                             }
                         </div>
                     )

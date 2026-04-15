@@ -115,11 +115,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## 🌐 Live Demo
-
-🔗 [https://keen-keeper-zeta.vercel.app/](https://keen-keeper-zeta.vercel.app/)
-
-> To add screenshots: create a `screenshots/` folder in the root of your project and drop in `home.png`, `friend-detail.png`, `timeline.png`, and `stats.png` — they'll automatically show up in the README on GitHub.
