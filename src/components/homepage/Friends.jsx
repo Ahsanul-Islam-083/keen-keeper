@@ -4,11 +4,9 @@ import FriendCard from '../ui/FriendCard';
 
 const Friends = async () => {
 
-    const res = await fetch("https://keen-keeper-zeta.vercel.app/data.json", {
-        cache: "no-store",
-    });
+    const res = await fetch("https://keen-keeper-zeta.vercel.app/data.json");
     const friends = await res.json();
-    // console.log(friends);
+
 
 
     const totalFriends = friends.length;
