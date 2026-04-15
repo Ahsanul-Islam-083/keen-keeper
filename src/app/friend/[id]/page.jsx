@@ -80,13 +80,13 @@ const FriendDetailsPage = async ({ params }) => {
                     </div>
 
                     <div className=" space-y-3">
-                        <button className="w-full flex items-center justify-center gap-2 py-4 text-sm font-medium text-gray-700 hover:bg-base-200 transition-colors border border-base-300 rounded-lg shadow">
+                        <button className="w-full flex items-center justify-center gap-2 py-4 text-sm font-medium text-gray-700 hover:bg-base-200 transition-colors border border-base-300 rounded-lg shadow cursor-pointer">
                             <LuBellOff size={16} /> Snooze 2 Weeks
                         </button>
-                        <button className="w-full flex items-center justify-center gap-2 py-4 text-sm font-medium text-gray-700 hover:bg-base-200 transition-colors shadow border border-base-300 rounded-lg">
+                        <button className="w-full flex items-center justify-center gap-2 py-4 text-sm font-medium text-gray-700 hover:bg-base-200 transition-colors shadow border border-base-300 rounded-lg cursor-pointer">
                             <LuArchive size={16} /> Archive
                         </button>
-                        <button className="w-full flex items-center justify-center gap-2 py-4 text-sm font-medium text-red-500 hover:bg-red-50 transition-colors shadow border border-base-300 rounded-lg">
+                        <button className="w-full flex items-center justify-center gap-2 py-4 text-sm font-medium text-red-500 hover:bg-red-50 transition-colors shadow border border-base-300 rounded-lg cursor-pointer">
                             <LuTrash2 size={16} /> Delete
                         </button>
                     </div>
