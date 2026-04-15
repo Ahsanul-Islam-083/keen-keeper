@@ -4,7 +4,7 @@ import Link from "next/link";
 const statusStyles = {
     "overdue": "badge badge-error text-white",
     "almost due": "badge badge-warning text-white",
-    "on-track": "badge badge-success text-white",
+    "on-track": "badge bg-[#2d5a4e] text-white",
 };
 
 
@@ -41,7 +41,7 @@ const FriendCard = ({ friend }) => {
                     {tags.map((tag) => (
                         <span
                             key={tag}
-                            className="badge badge-soft badge-success text-xs capitalize"
+                            className="badge badge-soft badge-success text-[#2d5a4e] text-xs capitalize"
                         >
                             {tag}
                         </span>

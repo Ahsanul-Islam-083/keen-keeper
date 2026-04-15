@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
 const statusStyles = {
     "overdue": "badge badge-error text-white",
     "almost due": "badge badge-warning text-white",
-    "on-track": "badge badge-success text-white",
+    "on-track": "badge bg-[#2d5a4e] text-white",
 };
 
 
@@ -65,7 +65,7 @@ const FriendDetailsPage = async ({ params }) => {
                             <span className={`${statusStyles[status]} capitalize`}>{status}</span>
                             <div className="space-x-1">
                                 {tags.map(tag => (
-                                    <span key={tag} className="badge badge-soft badge-success capitalize">{tag}</span>
+                                    <span key={tag} className="badge badge-soft badge-success text-[#2d5a4e] capitalize">{tag}</span>
                                 ))}
                             </div>
                         </div>
