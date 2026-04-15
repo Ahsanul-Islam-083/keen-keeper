@@ -118,7 +118,7 @@ const FriendDetailsPage = async ({ params }) => {
     
                         <div className="border-t border-base-200 pt-4">
                             <h3 className="font-semibold text-xl text-[#244D3F] mb-3">Quick Check-In</h3>
-                            <div className="grid grid-cols-3 gap-3">
+                            <div className="grid sm:grid-cols-3 gap-3">
 
                                 <VoiceCallBtn friend={friend} />
                                 <TextBtn friend={friend} />

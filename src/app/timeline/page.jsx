@@ -44,7 +44,7 @@ const TimelinePage = () => {
             <div className='flex flex-col sm:flex-row gap-3 mb-6'>
                 {/* type */}
                 <div className="dropdown dropdown-bottom">
-                    <div tabIndex={0} role="button" className="select w-56 justify-between btn-outline">{filterLabels[filterType] || "Filter timeline"}</div>
+                    <div tabIndex={0} role="button" className="select md:w-56 justify-between btn-outline">{filterLabels[filterType] || "Filter timeline"}</div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-56 p-2 shadow-sm">
                         <li onClick={() => setFilterType("all")}><a>✓ All</a></li>
                         <li onClick={() => setFilterType("call")}><a>✓ Voice Call</a></li>

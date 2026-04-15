@@ -14,7 +14,7 @@ const VideoCallBtn = ({friend}) => {
 
     return (
         <div>
-            <button onClick={handleVideoCall} className="btn h-30 w-full flex flex-col rounded-lg"><LuVideo size={22} /> Video</button>
+            <button onClick={handleVideoCall} className="btn sm:h-30 w-full flex sm:flex-col rounded-lg"><LuVideo size={22} /> Video</button>
         </div>
     );
 };

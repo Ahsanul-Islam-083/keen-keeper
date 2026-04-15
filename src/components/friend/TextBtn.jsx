@@ -15,7 +15,7 @@ const TextBtn = ({friend}) => {
 
     return (
         <div>
-            <button onClick={handleText} className="btn h-30 w-full flex flex-col rounded-lg"><LuMessageSquare size={22} /> Text</button>
+            <button onClick={handleText} className="btn sm:h-30 w-full flex sm:flex-col rounded-lg"><LuMessageSquare size={22} /> Text</button>
         </div>
     );
 };

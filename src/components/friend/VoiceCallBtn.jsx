@@ -16,7 +16,7 @@ const VoiceCallBtn = ({ friend }) => {
 
     return (
         <div>
-            <button onClick={handleVoiceCall} className="btn h-30 w-full flex flex-col rounded-lg"><LuPhone size={22} /> Call</button>
+            <button onClick={handleVoiceCall} className="btn sm:h-30 w-full flex sm:flex-col rounded-lg"><LuPhone size={22} /> Call</button>
         </div>
     );
 };
