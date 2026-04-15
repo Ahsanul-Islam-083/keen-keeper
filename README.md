@@ -19,7 +19,9 @@
 
 
 ### Stats
-<img width="944" height="852" alt="Statistics" src="https://github.com/user-attachments/assets/4bb3783b-0af3-4e8e-a0b5-3f4b584a1d37" />
+<img width="869" height="832" alt="image" src="https://github.com/user-attachments/assets/5860c941-3c54-4e2b-9b10-97e695a8995b" />
+
+
 
 
 ---
