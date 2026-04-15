@@ -22,8 +22,8 @@ const StatsPage = () => {
 
     return (
         <div className='container mx-auto px-4 py-10'>
-            <h1 className='text-3xl font-bold mb-6'>Timeline</h1>
-            <div className='border border-gray-200 rounded-lg p-6'>
+            <h1 className='text-3xl font-bold mb-6'>Friendship Analytics</h1>
+            <div className='border border-gray-200 rounded-lg p-6 shadow'>
                 <p className='font-semibold capitalize text-[#2d5a4e]'>By Interaction Type</p>
 
                 <PieChart
