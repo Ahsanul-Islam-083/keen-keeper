@@ -4,6 +4,9 @@ import { cache } from "react";
 import Image from "next/image";
 import { LuBellOff, LuArchive, LuTrash2, LuPhone, LuMessageSquare, LuVideo } from "react-icons/lu";
 import DataCard from "@/components/ui/DataCard";
+import VoiceCallBtn from "@/components/friend/VoiceCallBtn";
+import VideoCallBtn from "@/components/friend/VideoCallBtn";
+import TextBtn from "@/components/friend/TextBtn";
 
 const getFriends = cache(async () => {
     const res = await fetch("https://keen-keeper-zeta.vercel.app/data.json");
@@ -117,9 +120,9 @@ const FriendDetailsPage = async ({ params }) => {
                             <h3 className="font-semibold text-xl text-[#244D3F] mb-3">Quick Check-In</h3>
                             <div className="grid grid-cols-3 gap-3">
 
-                                <button className="btn h-30 flex flex-col rounded-lg"><LuPhone size={22} /> Call</button>
-                                <button className="btn h-30 flex flex-col rounded-lg"><LuMessageSquare size={22} /> Text</button>
-                                <button className="btn h-30 flex flex-col rounded-lg"><LuVideo size={22} /> Video</button>
+                                <VoiceCallBtn friend={friend} />
+                                <TextBtn friend={friend} />
+                                <VideoCallBtn friend={friend} />
                             </div>
                         </div>
 
