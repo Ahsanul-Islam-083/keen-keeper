@@ -37,18 +37,13 @@ const TimelineCard = ({ item }) => {
 
             {/* Text */}
             <div className="flex-1 min-w-0">
-                <p className="text-sm text-gray-800">
+                <p className="text-sm text-gray-500">
                     <span className="font-semibold capitalize text-[#2d5a4e]">{item.type}</span>
-                    <span className="text-gray-400"> with </span>
-                    <span className="font-medium">{item.name}</span>
+                    <span> with </span>
+                    <span className='text-gray-700'>{item.name}</span>
                 </p>
-                <p className="text-xs text-gray-400 mt-0.5">{formatDate(item.date)}</p>
+                <p className="text-xs text-gray-500 mt-0.5">{formatDate(item.date)}</p>
             </div>
-
-            {/* Label badge — hidden on mobile */}
-            {/* <span className="badge badge-ghost hidden sm:inline-flex">
-                {getLabel(item.type)}
-            </span> */}
         </div>
     );
 };
