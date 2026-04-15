@@ -7,16 +7,20 @@
 ## 📸 Screenshots
 
 ### Home
-![Home Page](./screenshots/home.png)
+<img width="900" height="951" alt="Home" src="https://github.com/user-attachments/assets/7dd048c4-545c-4470-9e80-658acf02683a" />
+
 
 ### Friend Detail
-![Friend Detail](./screenshots/friend-detail.png)
+<img width="938" height="850" alt="FriendDetails" src="https://github.com/user-attachments/assets/0aac1250-39ed-404b-a3ca-e70403de18f8" />
+
 
 ### Timeline
-![Timeline](./screenshots/timeline.png)
+<img width="920" height="854" alt="Timeline" src="https://github.com/user-attachments/assets/5f9d77dd-85dd-4f28-a5fe-be1e17b2293e" />
+
 
 ### Stats
-![Stats](./screenshots/stats.png)
+<img width="944" height="852" alt="Statistics" src="https://github.com/user-attachments/assets/4bb3783b-0af3-4e8e-a0b5-3f4b584a1d37" />
+
 
 ---
 
