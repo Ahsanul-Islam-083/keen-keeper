@@ -11,11 +11,18 @@ const getImage = (type) => {
     return callImg;
 };
 
+const formatDate = (date) =>
+    new Date(date).toLocaleDateString("en-US", {
+        month: "long", day: "numeric", year: "numeric",
+    });
 
 const TimelineCard = ({ item }) => {
+    console.log(item);
+
+
+
     return (
-        <div className={`flex items-center gap-4 px-5 py-4 transition-colors hover:bg-base-200
-      ${highlighted ? "bg-base-200" : "bg-base-100"}`}
+        <div className={`flex border border-gray-200 rounded-lg mb-4 items-center gap-4 px-5 py-4 transition-colors hover:bg-base-200`}
         >
             {/* Image icon */}
             <div className="w-10 h-10 shrink-0">
@@ -31,7 +38,7 @@ const TimelineCard = ({ item }) => {
             {/* Text */}
             <div className="flex-1 min-w-0">
                 <p className="text-sm text-gray-800">
-                    <span className="font-semibold">{getLabel(item.type)}</span>
+                    <span className="font-semibold capitalize text-[#2d5a4e]">{item.type}</span>
                     <span className="text-gray-400"> with </span>
                     <span className="font-medium">{item.name}</span>
                 </p>
